@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Videojuegos</title>
+    <link rel="stylesheet" href="CSS\estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <h1 class="centrar">
+                Desarrollo De Videojuegos
+            </h1>
+        </div>
+    
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="encuesta.html">Encuesta</a></li>
+                <li><a href="juegos.html">Videojuegos Conocidos</a></li>
+                <li><a href="info.html">Información</a></li>                
+            </ul>
+        </div>
+    
+        <div class="espacio">
+            <br>
+        </div>
+
+        <div class="body">
+            <div class="contenido">
+                <h2 class="centrar">
+                    Encuesta: Desarrollo de Videojuegos
+                </h2>
+                    <form action="/submit" method="POST">
+                        <!-- Pregunta 1 -->
+                        <label for="experiencia">1. ¿Tienes experiencia previa en el desarrollo de videojuegos?</label><br>
+                        <input type="radio" id="exp_si" name="experiencia" value="Sí">
+                        <label for="exp_si">Sí</label><br>
+                        <input type="radio" id="exp_no" name="experiencia" value="No">
+                        <label for="exp_no">No</label><br><br>
+
+                        <!-- Pregunta 2 -->
+                        <label for="lenguajes">2. ¿Qué lenguajes de programación has utilizado para el desarrollo de videojuegos?</label><br>
+                        <input type="checkbox" id="leng_csharp" name="lenguajes" value="C#">
+                        <label for="leng_csharp">C#</label><br>
+                        <input type="checkbox" id="leng_cpp" name="lenguajes" value="C++">
+                        <label for="leng_cpp">C++</label><br>
+                        <input type="checkbox" id="leng_js" name="lenguajes" value="JavaScript">
+                        <label for="leng_js">JavaScript</label><br>
+                        <input type="checkbox" id="leng_unreal" name="lenguajes" value="UnrealScript">
+                        <label for="leng_unreal">UnrealScript</label><br>
+                        <input type="checkbox" id="leng_python" name="lenguajes" value="Python">
+                        <label for="leng_python">Python</label><br>
+                        <input type="checkbox" id="leng_otros" name="lenguajes" value="Otros">
+                        <label for="leng_otros">Otros</label><br><br>
+
+                        <!-- Pregunta 3 -->
+                        <label for="motores">3. ¿Qué motores de videojuegos has utilizado?</label><br>
+                        <input type="checkbox" id="motor_unity" name="motores" value="Unity">
+                        <label for="motor_unity">Unity</label><br>
+                        <input type="checkbox" id="motor_unreal" name="motores" value="Unreal Engine">
+                        <label for="motor_unreal">Unreal Engine</label><br>
+                        <input type="checkbox" id="motor_godot" name="motores" value="Godot">
+                        <label for="motor_godot">Godot</label><br>
+                        <input type="checkbox" id="motor_cryengine" name="motores" value="CryEngine">
+                        <label for="motor_cryengine">CryEngine</label><br>
+                        <input type="checkbox" id="motor_otros" name="motores" value="Otros">
+                        <label for="motor_otros">Otros</label><br><br>
+
+                        <!-- Pregunta 4 -->
+                        <label for="genero">4. ¿Qué tipo de videojuegos has desarrollado o te gustaría desarrollar?</label><br>
+                        <input type="checkbox" id="genero_accion" name="genero" value="Acción">
+                        <label for="genero_accion">Acción</label><br>
+                        <input type="checkbox" id="genero_aventura" name="genero" value="Aventura">
+                        <label for="genero_aventura">Aventura</label><br>
+                        <input type="checkbox" id="genero_rpg" name="genero" value="RPG">
+                        <label for="genero_rpg">RPG</label><br>
+                        <input type="checkbox" id="genero_deportes" name="genero" value="Deportes">
+                        <label for="genero_deportes">Deportes</label><br>
+                        <input type="checkbox" id="genero_simulacion" name="genero" value="Simulación">
+                        <label for="genero_simulacion">Simulación</label><br>
+                        <input type="checkbox" id="genero_otros" name="genero" value="Otros">
+                        <label for="genero_otros">Otros</label><br><br>
+
+                        <!-- Pregunta 5 -->
+                        <label for="desafio">5. ¿Cuáles consideras que son los mayores desafíos en el desarrollo de videojuegos?</label><br>
+                        <input type="checkbox" id="desafio_rendimiento" name="desafio" value="Rendimiento">
+                        <label for="desafio_rendimiento">Rendimiento</label><br>
+                        <input type="checkbox" id="desafio_graficos" name="desafio" value="Gráficos">
+                        <label for="desafio_graficos">Gráficos</label><br>
+                        <input type="checkbox" id="desafio_multijugador" name="desafio" value="Multijugador">
+                        <label for="desafio_multijugador">Multijugador</label><br>
+                        <input type="checkbox" id="desafio_presupuesto" name="desafio" value="Presupuesto">
+                        <label for="desafio_presupuesto">Presupuesto</label><br>
+                        <input type="checkbox" id="desafio_complejidad" name="desafio" value="Complejidad del código">
+                        <label for="desafio_complejidad">Complejidad del código</label><br>
+                        <input type="checkbox" id="desafio_otros" name="desafio" value="Otros">
+                        <label for="desafio_otros">Otros</label><br><br>
+
+                        <!-- Pregunta 6 -->
+                        <label for="comercial">6. ¿Crees que es viable crear videojuegos comerciales de manera independiente?</label><br>
+                        <input type="radio" id="comercial_si" name="comercial" value="Sí">
+                        <label for="comercial_si">Sí</label><br>
+                        <input type="radio" id="comercial_no" name="comercial" value="No">
+                        <label for="comercial_no">No</label><br>
+                        <input type="radio" id="comercial_talvez" name="comercial" value="Tal vez">
+                        <label for="comercial_talvez">Tal vez</label><br><br>
+
+                        <!-- Pregunta 7 -->
+                        <label for="aprendizaje">7. ¿Te gustaría aprender más sobre el desarrollo de videojuegos?</label><br>
+                        <input type="radio" id="aprendizaje_si" name="aprendizaje" value="Sí">
+                        <label for="aprendizaje_si">Sí</label><br>
+                        <input type="radio" id="aprendizaje_no" name="aprendizaje" value="No">
+                        <label for="aprendizaje_no">No</label><br><br>
+
+                        <!-- Comentarios adicionales -->
+                        <label for="comentarios">8. Comentarios adicionales:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+            </div>
+        </div>
+
+        <div class="espacio">
+            <br>
+        </div>
+            <footer>                       
+                <h4>¡Suscríbete a la página para no perderte ninguna novedad sobre videojuegos!</h4>                
+                <form>
+                    <fieldset>
+                        <label>Nombre: <input type="text" name="nombre"></label>
+                        <label>Email: <input type="email" name="mail"></label>                        
+                        <br><br>                        
+                        <label>Acepto las condiciones de la suscripción <input type="checkbox" name="condiciones"></label>                        
+                        <br><br>                        
+                        <input type="submit" name="suscribir" value="¡Suscríbeme!" class="submitbutton">
+                    </fieldset>                    
+                </form>
+                
+            </footer>
+    </div>
+</body>
+</html>
